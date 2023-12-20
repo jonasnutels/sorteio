@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:wght@400;500&family=Pacifico&display=swap');
+:root {
+  background-image: url(./assets/hero-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+* {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+}
+
+ul {
+  list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+}

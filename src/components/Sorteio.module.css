@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Merriweather:ital@1&family=Montserrat:wght@400;500&family=Pacifico&display=swap');
+
+.container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+.titulo {
+  display: flex;
+}
+.titulo h1 {
+  font-size: 50px;
+}
+
+.nomeZoe {
+  font-size: 100px;
+  font-family: 'Fredericka the Great', serif;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heartImg {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.2s ease-in-out;
+  animation: pulse 1s infinite;
+}
+
+.heart-img:hover {
+  transform: scale(1.3);
+}
+
+.heart-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.heart {
+  width: 35px;
+  height: 35px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart-number {
+  color: white;
+  font-size: 18px;
+}
+
+.painel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    text-align: center;
+  }
+  .heartImg {
+    width: 50px;
+  }
+
+  .titulo {
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo h1 {
+    font-size: 30px;
+  }
+
+  .nomeZoe {
+    font-size: 100px;
+    font-family: 'Fredericka the Great', serif;
+  }
+
+  .heart-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-content: center;
+    gap: 5px;
+  }
+}

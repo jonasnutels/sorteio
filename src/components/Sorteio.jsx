@@ -33,9 +33,9 @@ function Sorteio() {
   };
 
   return (
-    <>
+    <div className={styles.App}>
+      <h1>Sorteio</h1>
       <div className={styles.container}>
-        <h1>Sorteio</h1>
         <ul>
           {numeros.map((numero) => (
             <li key={numero.id} onClick={() => handleNumeroSelect(numero)}>
@@ -90,7 +90,7 @@ function Sorteio() {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 }
 

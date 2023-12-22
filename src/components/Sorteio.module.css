@@ -1,3 +1,12 @@
+.App {
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  max-height: 90vh;
+  overflow-y: auto;
+}
 .container h3 {
   color: black;
 }
@@ -15,6 +24,8 @@
   display: flex;
   gap: 1rem;
   border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
   width: 350px;
   position: relative;
 }
